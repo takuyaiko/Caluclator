@@ -18,26 +18,28 @@
 @property (weak, nonatomic) IBOutlet UILabel *result;
 @property (weak, nonatomic) IBOutlet UILabel *op;
 
-- (IBAction)AC:(id)sender;
-- (IBAction)C:(id)sender;
-- (IBAction)point:(id)sender;
+/************機能**************/
+- (IBAction)AC:(id)sender;      //All Clear
+- (IBAction)C:(id)sender;       //Clear
+- (IBAction)point:(id)sender;   //小数点
 
-- (IBAction)zero:(id)sender;
-- (IBAction)one:(id)sender;
-- (IBAction)tow:(id)sender;
-- (IBAction)three:(id)sender;
-- (IBAction)four:(id)sender;
-- (IBAction)five:(id)sender;
-- (IBAction)six:(id)sender;
-- (IBAction)seven:(id)sender;
-- (IBAction)eight:(id)sender;
-- (IBAction)nine:(id)sender;
+/************0〜9**************/
+- (IBAction)zero:(id)sender;    //0
+- (IBAction)one:(id)sender;     //1
+- (IBAction)tow:(id)sender;     //2
+- (IBAction)three:(id)sender;   //3
+- (IBAction)four:(id)sender;    //4
+- (IBAction)five:(id)sender;    //5
+- (IBAction)six:(id)sender;     //6
+- (IBAction)seven:(id)sender;   //7
+- (IBAction)eight:(id)sender;   //8
+- (IBAction)nine:(id)sender;    //9
 
-- (IBAction)plus:(id)sender;
-- (IBAction)minus:(id)sender;
-- (IBAction)mul:(id)sender;
-- (IBAction)div:(id)sender;
-- (IBAction)equal:(id)sender;
-
+/************演算**************/
+- (IBAction)plus:(id)sender;    //+
+- (IBAction)minus:(id)sender;   //-
+- (IBAction)mul:(id)sender;     //*
+- (IBAction)div:(id)sender;     //÷
+- (IBAction)equal:(id)sender;   //=
 
 @end

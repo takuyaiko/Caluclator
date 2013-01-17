@@ -26,54 +26,42 @@
     // Dispose of any resources that can be recreated.
 }
     /**********機能**********/
-- (IBAction)AC:(id)sender {
+- (IBAction)AC:(id)sender {//All Clear
     x=0;
     y=0;
     a=0;
     n=0;
     p=0;
     [[self result]setText:[NSString stringWithFormat:@"%d",0]];
-    [[self op]setText:[NSString     stringWithFormat:@"　"]];
-    startInput=0;
+    [[self op]setText:[NSString     stringWithFormat:@"　"]];//演算ボタンの非表示
+    startInput=0;//未入力状態に戻す
 
 }
 
-- (IBAction)C:(id)sender {
+- (IBAction)C:(id)sender {//Clear
     x=0;
     n=0;
     p=0;
     y=a;
-    [[self result]setText:[NSString stringWithFormat:@"%g",a]];
-    startInput=0;
+    [[self result]setText:[NSString stringWithFormat:@"%g",y]];//前の入力の表示
+    startInput=0;//未入力状態に戻す
 }
 
-- (IBAction)point:(id)sender {
-    switch (p) {
-        case 0:
+- (IBAction)point:(id)sender {//小数点機能
+    switch (p) {//小数点有無の判定
+        case 0://小数点未入力の場合
        [[self result]setText:[NSString stringWithFormat:@"%g.",y]];
-            p=1;
+            p=1;//既入力状態
             break;
-        case 1:
+        case 1://小数点既入力の場合
             break;
     }
 }
 
     /***********入力**********/
 - (IBAction)zero:(id)sender {x=0;
-    switch(startInput){
-        case 0: //未入力
-            y=x;
-            startInput=1;
-            break;
-        case 1: //既入力
-            y=y*10+x;
-    }
-    [[self result]setText:[NSString stringWithFormat:@"%g",y]];
-}
-
-- (IBAction)one:(id)sender {x=1;
     switch (p) {
-        case 0:
+        case 0://小数点未入力の場合
             switch(startInput){
                 case 0: //未入力
                     y=x;
@@ -83,7 +71,27 @@
                     y=y*10+x;
             }
             break;
-        case 1:
+        case 1://小数点既入力の場合
+            n=n+1;
+            break;
+    }
+    [[self result]setText:[NSString stringWithFormat:@"%g",y]];
+}
+//問題点：0.000...と入力する場合他の数字を入力するまで表示することができない
+
+- (IBAction)one:(id)sender {x=1;
+    switch (p) {
+        case 0://小数点未入力の場合
+            switch(startInput){
+                case 0: //未入力
+                    y=x;
+                    startInput=1;
+                    break;
+                case 1: //既入力
+                    y=y*10+x;
+            }
+            break;
+        case 1://小数点既入力の場合
             n=n+1;
             x=x*pow(10,(-n));
             y=y+x;
