@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController{
-    BOOL startInput;
-    double x,y,a;
+    BOOL startInput,p;
+    double x,y,a,n;
     char op;
+
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *result;
