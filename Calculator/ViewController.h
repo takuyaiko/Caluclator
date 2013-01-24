@@ -7,21 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StateMachine.h"
 
 @interface ViewController : UIViewController{
+    /*
     BOOL startInput,p;
     double x,y,a,n;
     char op;
-
+     */
+    double ans;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *result;
-@property (weak, nonatomic) IBOutlet UILabel *op;
+@property (weak, nonatomic) IBOutlet UILabel *op_label;
+@property StateMachine* model;
 
 /************機能**************/
 - (IBAction)AC:(id)sender;      //All Clear
 - (IBAction)C:(id)sender;       //Clear
 - (IBAction)point:(id)sender;   //小数点
+
+
 
 /************0〜9**************/
 - (IBAction)zero:(id)sender;    //0
@@ -35,11 +41,14 @@
 - (IBAction)eight:(id)sender;   //8
 - (IBAction)nine:(id)sender;    //9
 
+
 /************演算**************/
 - (IBAction)plus:(id)sender;    //+
 - (IBAction)minus:(id)sender;   //-
 - (IBAction)mul:(id)sender;     //*
 - (IBAction)div:(id)sender;     //÷
 - (IBAction)equal:(id)sender;   //=
+
+
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A36121A16B1003400DEE582 /* StateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36121916B1003400DEE582 /* StateMachine.m */; };
 		0A9CFF961636760800F9FB3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CFF951636760800F9FB3E /* UIKit.framework */; };
 		0A9CFF981636760800F9FB3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CFF971636760800F9FB3E /* Foundation.framework */; };
 		0A9CFF9A1636760800F9FB3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CFF991636760800F9FB3E /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A36121816B1003400DEE582 /* StateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		0A36121916B1003400DEE582 /* StateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachine.m; sourceTree = "<group>"; };
 		0A9CFF911636760800F9FB3E /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9CFF951636760800F9FB3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A9CFF971636760800F9FB3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +125,8 @@
 				0A9CFFAD1636760800F9FB3E /* MainStoryboard.storyboard */,
 				0A9CFFB01636760800F9FB3E /* ViewController.h */,
 				0A9CFFB11636760800F9FB3E /* ViewController.m */,
+				0A36121816B1003400DEE582 /* StateMachine.h */,
+				0A36121916B1003400DEE582 /* StateMachine.m */,
 				0A9CFF9C1636760800F9FB3E /* Supporting Files */,
 			);
 			path = Calculator;
@@ -273,6 +278,7 @@
 				0A9CFFA21636760800F9FB3E /* main.m in Sources */,
 				0A9CFFA61636760800F9FB3E /* AppDelegate.m in Sources */,
 				0A9CFFB21636760800F9FB3E /* ViewController.m in Sources */,
+				0A36121A16B1003400DEE582 /* StateMachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

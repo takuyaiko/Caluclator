@@ -120,7 +120,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="four:" destination="2" eventType="touchDragInside" id="po8-s6-BIl"/>
+                                    <action selector="four:" destination="2" eventType="touchUpInside" id="b5W-9T-Qdp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg8-n4-cAN">
@@ -381,7 +381,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="op" destination="491-qv-W82" id="rO5-x4-2G5"/>
+                        <outlet property="op_label" destination="491-qv-W82" id="w3o-7a-Dd0"/>
                         <outlet property="result" destination="hkL-3t-PoL" id="AN7-K8-OqM"/>
                     </connections>
                 </viewController>
@@ -415,7 +415,7 @@
                 <relationship kind="action" name="three:"/>
                 <relationship kind="action" name="tow:"/>
                 <relationship kind="action" name="zero:"/>
-                <relationship kind="outlet" name="op" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="op_label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="result" candidateClass="UILabel"/>
             </relationships>
         </class>
