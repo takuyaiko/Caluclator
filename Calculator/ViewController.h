@@ -10,12 +10,7 @@
 #import "StateMachine.h"
 
 @interface ViewController : UIViewController{
-    /*
-    BOOL startInput,p;
-    double x,y,a,n;
-    char op;
-     */
-    double ans;
+    double ans;                 //計算結果
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *result;
