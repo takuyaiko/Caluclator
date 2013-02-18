@@ -53,7 +53,7 @@
 - (IBAction)zero:(id)sender {
     ans = [model number:0];
     [[self result]setText:[NSString stringWithFormat:@"%g",ans]];
-}//問題点：0.000...と入力する場合他の数字を入力するまで表示することができない
+}//問題点：0.000...と入力する場合、他の数字を入力するまで表示することができない
 
 - (IBAction)one:(id)sender {
     ans = [model number:1];
